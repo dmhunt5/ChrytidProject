@@ -21,6 +21,17 @@ This project is being built on the Godot game engine using its own built in lang
 
 - Combat system full functionality
 - Enemy AI
-- Protaganist and enemy assets
+- Protagonist and enemy assets
 - World tile map assets
 - PPM system full functionality
+
+# Music
+Soundcloud links to music:
+
+- [Hummed Chorus][hummed_chorus]
+- [Upbeat Battle Theme][upbeat_battle_theme]
+- [Medley of Themes][medley_of_themes]
+
+[hummed_chorus]: https://soundcloud.com/dekeugh/hummed-chorus?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing&si=6cefb17b743c401f93f907f69f8fab0d
+[upbeat_battle_theme]: https://soundcloud.com/dekeugh/battle-theme?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing&si=b34795563c514024afe50a3ae6697fe9
+[medley_of_themes]: https://soundcloud.com/dekeugh/medley-of-themes?si=24aee6110de3457f8387b009d7b8602c&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing
