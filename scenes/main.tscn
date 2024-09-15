@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://blemu5yxkylhk"]
+
+[ext_resource type="PackedScene" uid="uid://edluu4rlvmus" path="res://scenes/game.tscn" id="1_jpqhc"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Game" parent="." instance=ExtResource("1_jpqhc")]
+position = Vector2(145, 275)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+follow_viewport_enabled = true
