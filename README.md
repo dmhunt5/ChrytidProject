@@ -11,7 +11,8 @@ This game is a fast paced 2d platformer focused on close combat, movement, and a
 
 At this current state, the game is functioning and playable only on the engine. However, I am working on making it playable by building it on your own PC. Updates to this will appear here. 
 
-Currently, there are no actual assets included in this version as they are all still under development. However, some of the concept art will be included in a separate folder titled "FUTURE"
+Currently, there are no actual assets included in this version as they are all still under development. However, the concept art of the main character will be included in a separate folder titled "FUTURE"
+  all the credit fo the art goes to my friend Derp :)
 
 # Code and Engine
 
