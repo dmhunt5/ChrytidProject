@@ -41,10 +41,14 @@ Soundcloud links to music:
 
 ### Main Character:
 
-![Main_Character_Concept_1_Finished](https://github.com/user-attachments/assets/6e79921e-017e-4db9-b3c6-34161d7e96af)
+<img src ="https://github.com/user-attachments/assets/6e79921e-017e-4db9-b3c6-34161d7e96af" width="300" height="600">
+
 ### Mayor:
 
-![Mayor](https://github.com/user-attachments/assets/eab94b0c-4fb9-4234-8953-021e4c95b221)
+<img src ="https://github.com/user-attachments/assets/eab94b0c-4fb9-4234-8953-021e4c95b221" width="450" height="600">
+
 ### Puppet Snake Enemy:
 
-![Puppet Snake](https://github.com/user-attachments/assets/099473f8-3675-40c9-ba60-d0ddba6d5184)
+<img src ="https://github.com/user-attachments/assets/099473f8-3675-40c9-ba60-d0ddba6d5184" width="300" height="600">
+
+
