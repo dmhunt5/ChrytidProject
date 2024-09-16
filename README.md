@@ -1,4 +1,4 @@
-# Chytridiomycosis
+# Chytrid
 
 This repository contains the source for Chytridiomycosis. It is released under the GNU GPLv2+. See LICENSE for more details.
 
