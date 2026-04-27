@@ -5,7 +5,8 @@ class_name PlayerDash
 @export var dashingtimer: Timer
 @export var cooldowntimer: Timer
 @export var player: CharacterBody2D
-const xdashspeed = 500
+@onready var dashtoggle = get_node("/root/Game/Variables/Dashtoggle")
+const xdashspeed = 200
 const ydashspeed = 200
 
 func Enter():
@@ -16,6 +17,9 @@ func Enter():
 func Physics_Update(delta):
 	if !cooldowntimer.is_stopped():
 		print("in if cooldowntimer is stopped")
+		Transitioned.emit(self, "PlayerMove")
+	elif dashtoggle.isDashOn == false: 
+		print("dash is not on")
 		Transitioned.emit(self, "PlayerMove")
 	else:
 		if !dashingtimer.is_stopped():

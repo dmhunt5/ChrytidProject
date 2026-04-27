@@ -1,10 +1,13 @@
-[gd_scene load_steps=11 format=3 uid="uid://edluu4rlvmus"]
+[gd_scene load_steps=15 format=3 uid="uid://edluu4rlvmus"]
 
 [ext_resource type="Texture2D" uid="uid://dbx8hlbhl04bf" path="res://assets/sprites/basic blocks.png" id="1_6l4a0"]
-[ext_resource type="Script" path="res://scenes/game.gd" id="1_njuvm"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_njuvm"]
 [ext_resource type="PackedScene" uid="uid://covlh27blpi1u" path="res://scenes/player.tscn" id="2_8ayt0"]
 [ext_resource type="PackedScene" uid="uid://cbfkc3mpdl7yr" path="res://scenes/ppm.tscn" id="3_edjjf"]
 [ext_resource type="Script" path="res://scripts/Cycle.gd" id="3_eht0j"]
+[ext_resource type="PackedScene" uid="uid://bau5hdek80xjm" path="res://scenes/music_body_2d.tscn" id="6_lebs7"]
+[ext_resource type="PackedScene" uid="uid://ouow87cugwmw" path="res://global/dashtoggle.tscn" id="6_n0pmy"]
+[ext_resource type="Script" path="res://scripts/music_body_2d.gd" id="7_2ie8e"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_unoqf"]
 texture = ExtResource("1_6l4a0")
@@ -61,6 +64,9 @@ polygon = PackedVector2Array(32, -248, 64, -248, 64, -240, 32, -240)
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_ri048"]
 polygon = PackedVector2Array(-80, -168, 48, -168, 48, -160, -80, -160)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tutm8"]
+size = Vector2(426, 253)
+
 [node name="Game" type="Node2D"]
 script = ExtResource("1_njuvm")
 
@@ -114,7 +120,6 @@ occluder = SubResource("OccluderPolygon2D_ri048")
 [node name="DirectionalLight2D2" type="DirectionalLight2D" parent="Light Sources"]
 position = Vector2(61, -329)
 rotation = 1.77675
-scale = Vector2(1, 1)
 skew = -0.904081
 color = Color(1, 1, 1, 0.921569)
 energy = 1.61
@@ -126,3 +131,20 @@ shadow_filter_smooth = 0.6
 height = 0.33
 max_distance = 10003.0
 script = ExtResource("3_eht0j")
+
+[node name="Variables" type="Node" parent="."]
+
+[node name="Dashtoggle" parent="Variables" instance=ExtResource("6_n0pmy")]
+
+[node name="MusicBody2D" parent="." instance=ExtResource("6_lebs7")]
+visible = false
+script = ExtResource("7_2ie8e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MusicBody2D"]
+visible = false
+position = Vector2(649, -127.5)
+shape = SubResource("RectangleShape2D_tutm8")
+
+[connection signal="area_entered" from="MusicBody2D" to="." method="_on_music_body_2d_area_entered"]
+[connection signal="area_exited" from="MusicBody2D" to="." method="_on_music_body_2d_area_exited"]
+[connection signal="body_shape_entered" from="MusicBody2D" to="MusicBody2D" method="_on_body_shape_entered"]

@@ -19,3 +19,12 @@ func PPM():
 		Engine.time_scale = 0
 	
 	paused = !paused
+
+func _on_music_body_2d_area_entered(area):
+	$MusicPlayer.play()
+
+func _on_music_body_2d_area_exited(area, delta):
+	if delta >= 4:
+		$MusicPlayer.pause()
+	else:
+		$MusicPlayer.volume_db - 1

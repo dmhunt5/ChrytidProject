@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ouow87cugwmw"]
+
+[ext_resource type="Script" path="res://global/dashtoggle.gd" id="1_den13"]
+
+[node name="Dashtoggle" type="Node"]
+script = ExtResource("1_den13")

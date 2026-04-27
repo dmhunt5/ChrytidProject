@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://bau5hdek80xjm"]
+
+[node name="MusicBody2D" type="Area2D"]

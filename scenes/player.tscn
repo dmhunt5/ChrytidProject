@@ -125,3 +125,5 @@ one_shot = true
 zoom = Vector2(5, 5)
 limit_bottom = 50
 position_smoothing_enabled = true
+
+[connection signal="visibility_changed" from="Camera2D" to="." method="_on_camera_2d_visibility_changed"]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://cltkbg3uqof4o"]
+
+[ext_resource type="PackedScene" uid="uid://c4bs4a3cp5s5p" path="res://assets/sprites/something.aseprite" id="1_jvuib"]
+[ext_resource type="AudioStream" uid="uid://wunkr56w3qgt" path="res://assets/sounds/not sure tbh.mp3" id="2_qabjk"]
+
+[node name="Node" type="Node"]
+
+[node name="something" parent="." instance=ExtResource("1_jvuib")]
+position = Vector2(85, 119)
+frame = 4
+frame_progress = 0.255011
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_qabjk")

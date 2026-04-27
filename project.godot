@@ -15,6 +15,14 @@ run/main_scene="res://scenes/menu.tscn"
 config/features=PackedStringArray("4.2", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
+[aseprite_importers]
+
+aseprite_executable_path="C:/Program Files (x86)/Steam/steamapps/common/Aseprite/Aseprite.exe"
+
+[autoload]
+
+MusicPlayer="*res://global/music_player.tscn"
+
 [dotnet]
 
 project/assembly_name="Liar and a Frog"
@@ -23,6 +31,10 @@ project/assembly_name="Liar and a Frog"
 
 version_control/plugin_name="GitPlugin"
 version_control/autoload_on_startup=true
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/nklbdev.aseprite_importers/plugin.cfg")
 
 [input]
 

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://wunkr56w3qgt"
+path="res://.godot/imported/not sure tbh.mp3-95f6dc2cb6a19fe7fa602523c992cb4f.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/not sure tbh.mp3"
+dest_files=["res://.godot/imported/not sure tbh.mp3-95f6dc2cb6a19fe7fa602523c992cb4f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
